@@ -1,7 +1,7 @@
 {
   "name": "numeral",
-  "repo": "adamwdraper/Numeral-js",
-  "version": "1.5.3",
+  "repo": "crafity/Numeral-js",
+  "version": "1.0.0",
   "description": "Format and manipulate numbers.",
   "keywords": [
     "numeral",
@@ -11,6 +11,6 @@
     "money",
     "percentage"
   ],
-  "scripts": [ "numeral.js" ],
+  "scripts": ["numeral.js"],
   "main": "numeral.js"
 }
