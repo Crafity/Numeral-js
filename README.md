@@ -5,12 +5,6 @@ A javascript library for formatting and manipulating numbers.
 [Website and documentation](http://numeraljs.com/)
 
 
-# Travis Build Status
-
-Master [![Build Status](https://api.travis-ci.org/adamwdraper/Numeral-js.png)](https://travis-ci.org/adamwdraper/Numeral-js)
-
-Develop [![Build Status](https://travis-ci.org/adamwdraper/Numeral-js.png?branch=develop)](https://travis-ci.org/adamwdraper/Numeral-js)
-
 # NPM
 
 [![NPM](https://nodei.co/npm/numeral.png?downloads=true)](https://nodei.co/npm/numeral/)
@@ -191,7 +185,7 @@ Add clone functionality
 
 Added abbreviations for thousands and millions using 'a' in the format
 
-### 1.0.0
+### 1.0.1
 
 Initial release
 
