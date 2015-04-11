@@ -568,7 +568,8 @@
     numeral.isNumeral = _numeral.isNumeral;
     numeral.language = _numeral.language;
     numeral.languageData = _numeral.languageData;
-
+    numeral.createInstance = _numeral.createInstance;
+    
     return numeral;
   }
 
