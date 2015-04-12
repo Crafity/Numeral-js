@@ -181,11 +181,11 @@ Add ordinal formatting using 'o' in the format
 
 Add clone functionality
 
-### 1.0.1
+### 1.0.2
 
 Added abbreviations for thousands and millions using 'a' in the format
 
-### 1.0.1
+### 1.0.2
 
 Initial release
 

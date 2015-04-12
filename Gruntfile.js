@@ -58,8 +58,7 @@ module.exports = function (grunt) {
         'onevar': true,
         'undef': true,
         'sub': true,
-        'strict': false,
-        'quotmark': 'single'
+        'strict': false
       }
     }
   });
