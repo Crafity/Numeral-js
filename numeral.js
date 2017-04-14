@@ -21,8 +21,8 @@
         var b = number % 10;
         return (~~(number % 100 / 10) === 1) ? 'th' :
           (b === 1) ? 'st' :
-            (b === 2) ? 'nd' :
-              (b === 3) ? 'rd' : 'th';
+          (b === 2) ? 'nd' :
+          (b === 3) ? 'rd' : 'th';
       },
       currency: {
         symbol: '$'
@@ -115,12 +115,24 @@
           }
         }
 
-        // do some math to create our number
-        n._value =
-          ((bytesMultiplier) ? bytesMultiplier : 1) * ((stringOriginal.match(thousandRegExp)) ? Math.pow(10, 3) : 1) * ((stringOriginal.match(millionRegExp)) ? Math.pow(10, 6) : 1) * ((stringOriginal.match(billionRegExp)) ? Math.pow(10, 9) : 1) * ((stringOriginal.match(trillionRegExp)) ? Math.pow(10, 12) : 1) * ((string.indexOf('%') > -1) ? 0.01 : 1) * (((string.split('-').length + Math.min(string.split('(').length - 1, string.split(')').length - 1)) % 2) ? 1 : -1) * Number(string.replace(/[^0-9\.]+/g, ''));
+        if (!!string.match(/[^0-9\.,]+/g)) {
+          n._value = NaN;
+        } else {
+          // do some math to create our number
+          n._value =
+            ((bytesMultiplier) ? bytesMultiplier : 1) * ((stringOriginal.match(thousandRegExp)) ?
+              Math.pow(10, 3) : 1) *
+            ((stringOriginal.match(millionRegExp)) ? Math.pow(10, 6) : 1) *
+            ((stringOriginal.match(billionRegExp)) ? Math.pow(10, 9) : 1) *
+            ((stringOriginal.match(trillionRegExp)) ? Math.pow(10, 12) : 1) *
+            ((string.indexOf('%') > -1) ? 0.01 : 1) *
+            (((string.split('-').length + Math.min(string.split('(').length - 1, string.split(')').length - 1)) % 2) ? 1 : -1) *
+            Number(string.replace(/[^0-9\.]+/g, ''));
 
-        // round if we are talking about bytes
-        n._value = (bytesMultiplier) ? Math.ceil(n._value) : n._value;
+          // round if we are talking about bytes
+          n._value = (bytesMultiplier) ? Math.ceil(n._value) : n._value;
+        }
+
       }
     }
     return n._value;
@@ -528,11 +540,11 @@
     createInstance: createNumeral,
 
     zeroFormat: function (format) {
-      this.state.zeroFormat = typeof(format) === 'string' ? format : null;
+      this.state.zeroFormat = typeof (format) === 'string' ? format : null;
     },
 
     defaultFormat: function (format) {
-      this.state.defaultFormat = typeof(format) === 'string' ? format : '0.0';
+      this.state.defaultFormat = typeof (format) === 'string' ? format : '0.0';
     }
 
   };
@@ -569,7 +581,7 @@
     numeral.language = _numeral.language;
     numeral.languageData = _numeral.languageData;
     numeral.createInstance = _numeral.createInstance;
-    
+
     return numeral;
   }
 

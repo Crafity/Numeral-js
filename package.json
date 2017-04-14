@@ -1,47 +1,49 @@
 {
-  "name": "crafity-numeral",
-  "version": "1.0.2",
-  "description": "Format and manipulate numbers.",
-  "homepage": "http://numeraljs.com",
   "author": {
-    "name": "Adam Draper",
     "email": "adamwdraper@gmail.com",
+    "name": "Adam Draper",
     "url": "http://github.com/adamwdraper"
-  },
-  "keywords": [
-    "numeral",
-    "number",
-    "format",
-    "time",
-    "money",
-    "percentage"
-  ],
-  "main": "./numeral.js",
-  "engines": {
-    "node": "*"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/crafity/Numeral-js"
   },
   "bugs": {
     "url": "https://github.com/crafity/Numeral-js/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
+  "dependencies": {},
+  "description": "Format and manipulate numbers.",
   "devDependencies": {
-    "uglify-js": "latest",
     "grunt": "latest",
-    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-jshint": "latest",
     "grunt-contrib-nodeunit": "~0.1.2",
-    "grunt-contrib-concat": "~0.3.0"
+    "grunt-contrib-uglify": "latest",
+    "uglify-js": "latest"
   },
-  "scripts": {
-    "test": "grunt"
+  "directories": {},
+  "engines": {
+    "node": "*"
   },
-  "ender": "./ender.js"
+  "homepage": "http://numeraljs.com",
+  "keywords": [
+    "format",
+    "money",
+    "number",
+    "numeral",
+    "percentage",
+    "time"
+  ],
+  "licenses": [{
+    "type": "MIT"
+  }],
+  "main": "./numeral.js",
+  "maintainers": [{
+    "name": "crafity",
+    "email": "npm@crafity.com"
+  }],
+  "name": "crafity-numeral",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crafity/Numeral-js.git"
+  },
+  "version": "1.0.3"
 }
